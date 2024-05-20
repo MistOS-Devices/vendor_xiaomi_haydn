@@ -1,23 +1,9 @@
 multiCameraLogicalXMLFile=haydn.xml
 isZoomRatioSupported=TRUE
-
-#close camera log
-logInfoMask=0
-overrideLogLevels=0x1
-logWarningMask=0
-logConfigMask=0
-systemLogEnable=TRUE
-logCoreCfgMask=0
-enableAsciiLogging=0
-logRequestMapping=FALSE
-enableTxtLogging=0
-traceGroupsEnable=0
-enable3ADebugData=FALSE
-enableTuningMetadata=FALSE
-raiserecoverysigabrt=FALSE
-enableCameraCoreDumpBinary=FALSE
-enableCameraCoreDumpText=FALSE
-
+logInfoMask=0x10098
+logConfigMask=0x80
+raiserecoverysigabrt=TRUE
+overrideLogLevels=0x1F
 pdafHWEnable=FALSE
 isPhyicalMultiCameraSupported=TRUE
 bokehRelightVerion=2
@@ -71,6 +57,8 @@ isVideoBeautyEISSupported=TRUE
 #input size only maxsize for cts
 minReprocessInputWidth=0x1FFF
 minReprocessInputHeight=0x1FFF
+enableTxtLogging=1
+offlineLogNumber=20
 enablePerRequestSync=FALSE
 
 #add for raising frame rate in HFR when fps>=120
